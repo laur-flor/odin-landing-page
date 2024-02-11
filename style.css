@@ -10,15 +10,17 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    align-items: center;
+    
+    padding: 0 300px;
 }
 
 .content {
     display: flex;
     flex: 1;
     flex-direction: column;
-   
     justify-content: center;
+    
 }
 
 .footer {
@@ -46,14 +48,47 @@ ul {
     list-style-type: none;
 }
 
-
-
-
-
 .hero {
     display: flex;
     flex-grow: 1;
+    padding: 80px 300px;
+    /* border: 2px solid pink; */
 }
+
+.hero-left, .hero-right {
+   /* border: 2px solid pink; */
+    flex: 1; 
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 8px;
+  background: #3882F6;
+  border: 1px solid #3882F6;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+
 
 .info {
     display: flex;
@@ -82,17 +117,25 @@ ul {
     flex-grow: 1;
 }
 
+.plants img {
+    border: 4px solid #3882f6;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
 .blue, .glass, .gold, .sweet {
     width: 200px;
     flex-wrap: wrap;
-    border: 2px solid #3882F6;
+   
 }
 
 .info-header {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
 
 /*the borders go around the images, not the 
